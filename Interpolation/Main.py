@@ -8,7 +8,7 @@ import sys
 
 
 def read_Input_Text():
-    with open("input.txt", "r") as inputText:
+    with open(os.path.join(sys.path[0], "input.txt"), "r") as inputText:
         lines = inputText.readlines()
         n = int(lines[0])
         xs = []
